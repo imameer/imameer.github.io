@@ -1,149 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ameer Raja — Data Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameerraja | Data Platform Engineer</title>
+    <style>
+        /* THE ANTHROPIC-INSPIRED MINIMALIST THEME */
+        :root {
+            --bg-color: #F3F1E8; /* Warm Beige */
+            --text-color: #262626; /* Soft Black */
+            --accent-color: #D9534F; /* Muted Terra Cotta */
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+        }
 
-  <!-- Google font (system-safe fallback included) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Ameer Raja — Data & Platform Engineer. Portfolio, projects and blog." />
+        /* LAYOUT */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: 1.5rem; margin-top: 3rem; border-bottom: 1px solid #d1cfc7; padding-bottom: 0.5rem;}
+        h3 { font-size: 1.1rem; font-weight: bold; margin-bottom: 0.2rem; }
+        
+        p { margin-bottom: 1.5rem; color: #444; }
+        
+        a { color: var(--text-color); text-decoration: underline; text-decoration-color: var(--accent-color); text-underline-offset: 4px;}
+        a:hover { background-color: var(--accent-color); color: white; text-decoration: none; }
+
+        /* HEADER */
+        header { margin-bottom: 4rem; }
+        .tagline { font-family: var(--font-serif); font-style: italic; color: #666; }
+
+        /* RESUME SECTIONS */
+        .job-block { margin-bottom: 2.5rem; }
+        .job-meta { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; font-family: var(--font-serif); }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; }
+        .skill-tag { background: #E8E6DD; padding: 0.2rem 0.6rem; font-size: 0.85rem; border-radius: 4px; }
+
+        /* BLOG PLACEHOLDER */
+        .blog-preview { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #262626; }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1>Ameer Raja</h1>
-        <p class="title">Data Engineer · Data Platform Engineer</p>
-      </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#articles">Articles</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero container" id="home">
-      <div>
-        <h2>Hi — I build reliable data platforms & pipelines.</h2>
-        <p class="lead">
-          I design and implement scalable data platforms (Spark, Iceberg, dbt, Airflow) focused on observability,
-          cost-efficiency and fast time-to-insight. Currently at Guidewire building medallion architecture and streaming solutions.
+<div class="container">
+    <header>
+        <h1>Ameerraja</h1>
+        <p class="tagline">Data Platform Engineer & Software Engineer</p>
+        <nav>
+            <a href="#work">Work</a> &nbsp;/&nbsp; 
+            <a href="#skills">Skills</a> &nbsp;/&nbsp; 
+            <a href="#writing">Writing</a> &nbsp;/&nbsp; 
+            <a href="mailto:ameerrajaeee@gmail.com">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <p>
+            I build comprehensive data analytics platforms and robust ETL frameworks. 
+            Currently a <strong>Software Engineer - Data at Guidewire</strong>, I specialize in reducing time-to-insight 
+            and optimizing cloud infrastructure costs.
         </p>
-        <p class="cta-row">
-          <a class="btn" href="assets/Ameerraja_Resume.pdf" download>Download Resume</a>
-          <a class="btn ghost" href="mailto:ameerrajaeee@gmail.com">Email</a>
-          <a class="btn ghost" href="https://linkedin.com/in/ameerraja" target="_blank" rel="noopener">LinkedIn</a>
-        </p>
-      </div>
-      <aside class="card quick-facts">
-        <h3>Quick facts</h3>
-        <ul>
-          <li>Based in Bangalore, India</li>
-          <li>Data platforms, Spark, Iceberg, dbt</li>
-          <li>Certs: DP-203, PL-300, AZ-900, AWS Cloud Practitioner</li>
+    </section>
+
+    <section id="work">
+        <h2>Experience</h2>
+
+        <article class="job-block">
+            <h3>Guidewire Software Solutions</h3>
+            <div class="job-meta">Software Engineer - Data | Jun 2023 — Present</div>
+            <p>
+                Built a medallion architecture analytics platform reducing time-to-insight by 65%. 
+                Engineered data pipelines with Spark and Iceberg, and integrated LLM technologies to improve risk assessment models by 42%.
+            </p>
+        </article>
+
+        <article class="job-block">
+            <h3>Tata Consultancy Services</h3>
+            <div class="job-meta">Data Engineer | Jan 2021 — Jun 2023</div>
+            <p>
+                Architected ETL pipelines using Azure Data Factory, reducing manual data handling by 70%. 
+                Built Python-based workflows for 200+ applications enabling real-time analytics via Power BI.
+            </p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Stack</h2>
+        <ul class="skills-list">
+            <li class="skill-tag">Python</li>
+            <li class="skill-tag">SQL</li>
+            <li class="skill-tag">Apache Spark</li>
+            <li class="skill-tag">AWS (Glue, Athena, Redshift)</li>
+            <li class="skill-tag">Apache Airflow</li>
+            <li class="skill-tag">Apache Iceberg</li>
+            <li class="skill-tag">Terraform</li>
+            <li class="skill-tag">Kafka</li>
+            <li class="skill-tag">dbt</li>
         </ul>
-      </aside>
     </section>
 
-    <section id="about" class="container">
-      <div class="section-grid">
-        <article>
-          <h3>About</h3>
-          <p>
-            I’m a Data & Platform Engineer focused on building robust ETL frameworks, data governance,
-            and streaming analytics. I prioritize reliability, observability, and cost-effective architectures.
-          </p>
-
-          <h4>Core strengths</h4>
-          <ul>
-            <li>Medallion architectures, data lakes (Iceberg)</li>
-            <li>Spark (batch & streaming), Kafka</li>
-            <li>ETL orchestration (Airflow), dbt transformations</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Contact</h3>
-          <p class="muted">Phone: +91-8667692789</p>
-          <p class="muted">Email: <a href="mailto:ameerrajaeee@gmail.com">ameerrajaeee@gmail.com</a></p>
-          <p class="muted">LinkedIn: <a href="https://linkedin.com/in/ameerraja">/ameerraja</a></p>
-        </article>
-      </div>
+    <section id="writing" class="blog-preview">
+        <h2>Writing</h2>
+        <p><em>Articles and notes on Data Engineering will appear here soon.</em></p>
+        <ul>
+            <li><a href="#">Understanding Medallion Architecture (Coming Soon)</a></li>
+            <li><a href="#">Optimizing AWS Costs for Data Pipelines (Coming Soon)</a></li>
+        </ul>
     </section>
-
-    <section id="experience" class="container">
-      <h3>Experience</h3>
-
-      <div class="timeline">
-        <div class="job">
-          <h4>Software Engineer - Data</h4>
-          <p class="meta">Guidewire Software Solutions — Jun 2023 – Present</p>
-          <ul>
-            <li>Built a comprehensive data analytics platform using medallion architecture, reducing time-to-insight by ~65%.</li>
-            <li>Engineered ETL frameworks with Spark and Apache Iceberg for a performant data lake.</li>
-            <li>Introduced data governance and quality frameworks that reduced incidents and improved compliance.</li>
-            <li>Modernized ETL with Airflow and dbt; optimized Postgres queries and SCD-2 handling.</li>
-            <li>Integrated Kafka + Spark Structured Streaming for near real-time analytics.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h4>Data Engineer</h4>
-          <p class="meta">Tata Consultancy Services — Jan 2021 – Jun 2023</p>
-          <ul>
-            <li>Architected ETL pipelines using Azure Data Factory for a hotel chain, reducing manual effort by 70%.</li>
-            <li>Built Python ETL workflows supporting 200+ apps and enabling real-time analytics through Power BI.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="container">
-      <h3>Skills & Technologies</h3>
-      <div class="chips">
-        <span>Python</span><span>SQL</span><span>Spark</span><span>Iceberg</span><span>dbt</span>
-        <span>Airflow</span><span>Kafka</span><span>AWS</span><span>Terraform</span><span>Docker</span>
-      </div>
-
-      <h4>Tools & infra</h4>
-      <p class="muted">Postgres, Redshift, Databricks, S3, Glue, Athena, Kubernetes, CI/CD</p>
-    </section>
-
-    <section id="articles" class="container">
-      <h3>Articles & Notes I liked</h3>
-      <p class="muted small">(replace these with your favorite reads — links below are examples)</p>
-      <ul class="links">
-        <li><a href="https://www.databricks.com/blog/2021/06/22/what-is-apache-iceberg.html" target="_blank" rel="noopener">Intro to Apache Iceberg — Databricks</a></li>
-        <li><a href="https://www.martinfowler.com/articles/patterns-of-data-warehousing.html" target="_blank" rel="noopener">Patterns of Data Warehousing — Martin Fowler</a></li>
-        <li><a href="https://www.getdbt.com/" target="_blank" rel="noopener">dbt — analytics engineering</a></li>
-        <li><a href="https://cloud.google.com/architecture/real-time-analytics-with-kafka" target="_blank" rel="noopener">Real-time analytics patterns</a></li>
-      </ul>
-    </section>
-
-    <section id="blog" class="container">
-      <h3>Blog (coming soon)</h3>
-      <p class="muted">Add short write-ups about interesting problems you solved — link to /blog/slug pages.</p>
-    </section>
-
-    <section id="contact" class="container">
-      <h3>Get in touch</h3>
-      <p>If you’d like to discuss data platforms, engineering, or collaboration — <a href="mailto:ameerrajaeee@gmail.com">email me</a>.</p>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>Built by Ameer Raja • Data Engineer</p>
-        <p class="small muted">Content populated from my resume (uploaded). :contentReference[oaicite:1]{index=1}</p>
-      </div>
+    
+    <footer>
+        <p style="font-size: 0.8rem; color: #888; margin-top: 4rem;">
+            © 2025 Ameerraja. Hosted on GitHub Pages.
+        </p>
     </footer>
-  </main>
+</div>
 
 </body>
 </html>
